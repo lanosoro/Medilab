@@ -4,35 +4,28 @@
           <div class="row">
           <div class="footer-col">
               <h4>
-                  company
+                  Why Medilabs Ltd
               </h4>
-              <ul>
-                  <li><a href="#">about us</a></li>
-                  <li><a href="#">our survey</a></li>
-                  <li><a href="#">privacy policy</a></li>
-                  <li><a href="#">affiliatie proram</a></li>
-              </ul>
+           <p style="color:white;">
+               We believe "Quality is not an act, it is a Habit,” Committed to develop, sustain high quality in manufacturing of drug formulations in order to meet the customers satisfaction.
+           </p>
           </div>
            <div class="footer-col">
               <h4>
-                  get help
+             Our Main Goal
               </h4>
-              <ul>
-                  <li><a href="#">FAAQ</a></li>
-                  <li><a href="#">shipping</a></li>
-                  <li><a href="#">returns</a></li>
-                  <li><a href="#">Order Status</a></li>
-                  <li><a href="#">payment options</a></li>
-              </ul>
+        <p style="color:white;">
+            Medilabs main goal is to provide quality healthcare to all through a wide range of healthcare products that meet individual customer needs.
+        </p>
           </div> <div class="footer-col">
               <h4>
-                  online shop
+                  other Links
               </h4>
               <ul>
-                  <li><a href="#">watch</a></li>
-                  <li><a href="#">bag</a></li>
-                  <li><a href="#">blash</a></li>
-                  <li><a href="#">dress</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Careers</a></li>
               </ul>
           </div> <div class="footer-col">
               <h4>
@@ -50,14 +43,14 @@
               </form>
           </div></div>
       </div>
-<div id="bottomfooter"></div>
+<div id="bottomfooter">  Copyright © {{ new Date().getFullYear() }}· All Rights Reserved · Medilabs Ltd Web design by ·<span id="link"> <a href="http://fineteklabs.com"> Finetek</a> </span></div>
   </footer>
 </template>
 
 <script>
 
 export default {
-
+ 
 }
 </script>
 
@@ -76,6 +69,17 @@ export default {
     width: 100%;
 
 }
+#link{
+    text-decoration: none;
+    color: inherit;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s ease-in-out;
+}
+#link::before{
+    font-size: 28px;
+}
+#link::after{
+    font-size: 18px;
+}
 #bottomfooter {
   position: relative;
   left: 0;
@@ -84,6 +88,13 @@ export default {
   width: 100vw;
   padding: 30px;
   margin-left: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  margin-top:70px;
+  
 }
 .container{
     max-width: 1170px;
@@ -93,7 +104,7 @@ export default {
 }
 .footer-col{
     width: 25%;
-    padding: 0 15px;
+    padding: 0 35px;
 
 
 }
@@ -212,6 +223,9 @@ a
 
 
 }
+.footer{
+    padding: 0px 0px;
+}
 .container #bottomfooter{
        max-width: 100%;
     position: relative;
@@ -230,7 +244,7 @@ a
   position: relative;
   left: 0;
   right: 0;
-
+ font-size: 12px;
   max-width: 100%;
   padding: 30px;
 }

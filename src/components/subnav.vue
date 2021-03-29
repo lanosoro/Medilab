@@ -11,6 +11,9 @@
             srcset=""
         /></a>
       </div>
+      <div class="small">
+        <i class="fas fa-bars"></i>
+      </div>
       <v-flex class="subnav-content">
         <div class="nav-content">
           <div class="navlinks"><a href="#">Home</a></div>

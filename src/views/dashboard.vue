@@ -19,12 +19,14 @@
         </div>
       </v-carousel-item>
     </v-carousel>
+    <bodycom/>
   </v-layout>
 </template>
 
 <script>
+import bodycom from '../components/bodycom.vue';
 export default {
-  components: {},
+  components: {bodycom},
   data() {
     return {
       colors: [
@@ -147,18 +149,17 @@ table :nth-of-type(2) {
   #display {
     height: 400px;
   }
-  #overlay {
+  .header {
     position: absolute;
     bottom: 0%;
-    left: 0;
-    right: 0;
-    width: 100%ss;
+    left: 0px;
+    right: 0px;
+    max-width: 1096px;
     height: 260px;
     z-index: 99;
     width: 60%;
     background-color: rgba(0, 116, 165, 0.6);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  
   }
 }
 </style>
