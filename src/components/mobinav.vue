@@ -19,7 +19,8 @@
           label="Search ..."
           solo
           style="width:300px; position:relative; right:30px"
-        ></v-autocomplete>
+        >
+        <i class="fa fa-search" aria-hidden="true"></i></v-autocomplete>
       </div>
     </div>
   </section>

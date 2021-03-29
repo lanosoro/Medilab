@@ -1,5 +1,5 @@
 <template>
-  <v-layout id="container">
+  <div fluid fill-height class="pa-0" id="container">
     <div class="over"></div>
     <v-carousel
       id="display"
@@ -20,7 +20,7 @@
       </v-carousel-item>
     </v-carousel>
     <bodycom/>
-  </v-layout>
+  </div>
 </template>
 
 <script>
@@ -72,6 +72,9 @@ export default {
 
 #container {
   display: block;
+  left: 0;
+  right: 0;
+  position: relative;
 }
 .over {
   position: absolute;

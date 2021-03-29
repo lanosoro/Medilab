@@ -8,43 +8,55 @@
    <div class="productcontainer" >
        <div class="productcategory"  >
            <div class="productimage" >
-               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/kitchenhygieneicon.png" alt="">
+               <img src="../assets/F&B.png" alt="">
            </div>
        </div>
         <div class="productcategory"   >
            <div  >
-               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/kitchenhygieneicon.png" alt="">
+               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/housekeepingicon.png" alt="">
            </div>
        </div>
         <div class="productcategory"  >
            <div  >
-               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/kitchenhygieneicon.png" alt="">
+               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/watertreatmenticon.png" alt="">
            </div>
        </div> <br>
         <div id="content5" class="productcategory"  >
            <div id="d" >
-               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/kitchenhygieneicon.png" alt="">
+               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/conveyorsystemsicon.png" alt="">
            </div>
        </div>
         <div class="productcategory"  >
            <div class="productimage" >
-               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/kitchenhygieneicon.png" alt="">
+               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/personalcareicon.png" alt="">
            </div>
        </div>
         <div class="productcategory"  >
            <div class="productimage" >
-               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/kitchenhygieneicon.png" alt="">
+               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/workshopicon.png" alt="">
            </div>
        </div>
         <div class="productcategory"  >
            <div class="productimage" >
-               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/kitchenhygieneicon.png" alt="">
+               <img src="https://www.odexchemicals.com/wp-content/uploads/2019/08/laundryicon.png" alt="">
            </div>
        </div>
    </div>
   <main>
     <div class="contents">
-
+       <img src="../assets/londro.jpg" height="130px" alt="">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel est unde amet at rem nihil, excepturi aliquid illo tempore hic, quidem consequatur. Sit ullam hic praesentium pariatur omnis at earum.
+      <v-btn id="btn">view all</v-btn>
+    </div>
+     <div class="contents">
+       <img src="../assets/sani.jpg" height="130px" alt="">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel est unde amet at rem nihil, excepturi aliquid illo tempore hic, quidem consequatur. Sit ullam hic praesentium pariatur omnis at earum.
+      <v-btn id="btn">findout more</v-btn>
+    </div>
+     <div class="contents">
+        <img src="../assets/clean.jpg" height="130px" alt="">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel est unde amet at rem nihil, excepturi aliquid illo tempore hic, quidem consequatur. Sit ullam hic praesentium pariatur omnis at earum.
+      <v-btn id="btn">Learn more</v-btn>
     </div>
   </main>
  
@@ -83,6 +95,14 @@ export default {
 body {
   font-family: "Inter", sans-serif;
 }
+.contents{
+  display: block;
+  line-height: 2em;
+  padding:37px ;
+  position: sticky;
+  top: -400px;
+
+}
 .productcontainer{
    
     flex-direction: row;
@@ -110,7 +130,7 @@ body {
 
 .container {
   display: grid;
-  height: 100vh;
+  height: 125vh;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 1.2fr 0.8fr;
@@ -135,12 +155,28 @@ nav {
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
+#btn{
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background: #28b6e7;
+  color: white;
+  font: 500;
+}
 
 main {
-  background: #84ffff;
+  background: transparent;
   grid-area: main;
+  color: black;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  line-height: 1.5em;
+  padding: 50px;
+  backface-visibility: hidden;
+  top: 500px;
+  position: sticky;
 }
 
 #sidebar {
@@ -173,11 +209,11 @@ main {
 .content4{
   background: #28b6e7;
   grid-area: content4;
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
   color: white;
-  font-size: 32px;
-  padding-top: var(--main-padding);
+  font-size: 28px;
+  padding-top: 12px;
 }
 #java{
     position: relative;
@@ -238,6 +274,14 @@ a {
 #content4{
   position: relative;
   top: 0px;
+}
+main{
+  display: block;
+
+  width: 100%;
+  padding: 12px;
+  position: relative;
+  left: 0;
 }
 }
 
