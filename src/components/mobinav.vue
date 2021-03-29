@@ -45,7 +45,7 @@
   width: 60px;
 }
 .nav-menu-list {
-  list-style: none;
+
   padding: 10px;
   display: flex;
   flex-direction: row;

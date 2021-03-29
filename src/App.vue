@@ -14,17 +14,17 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
-    <footer id="topfooter">
+    
       <topfooter />
-    </footer>
-    <footer id="bottomfooter"></footer>
+ 
+    
   </div>
 </template>
 <script>
 // import TheDesktopNav from "./components/TheDesktopNav.vue";
 import mobinav from "./components/mobinav";
 import Subnav from "./components/subnav.vue";
-import topfooter from "./components/topfooter";
+import topfooter from "./components/footer2";
 export default {
   components: {
     // TheDesktopNav,
@@ -44,14 +44,7 @@ header {
   right: 0;
   background: #28b6e7;
 }
-#bottomfooter {
-  position: relative;
-  left: 0;
-  right: 0;
-  background: #28b6e7;
-  width: 100vw;
-  padding: 30px;
-}
+
 #topfooter {
   position: relative;
   left: 0;
@@ -98,6 +91,9 @@ header {
   #topfooter {
     bottom: 0;
     position: relative;
+  }
+  #bottomfooter{
+    bottom: 0px;
   }
 }
 </style>

@@ -47,7 +47,7 @@ export default {
   display: flex;
   align-items: flex-end;
   position: relative;
-  right: 10px;
+  right: 0px;
   justify-content: center;
 }
 .subnav-content {
@@ -69,7 +69,8 @@ export default {
   text-align: center;
   border-bottom: 3px solid transparent;
   display: flex;
-  left: 0;
+  left: 0px;
+
   padding: auto;
 }
 .navlinks {
@@ -106,5 +107,43 @@ a:hover,
     left: 20px;
     height: 80px;
   }
+  #subnav {
+  max-width: 100%;
+  background: white;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 0px;
+  left: 0px;
+  justify-content: center;
 }
+}
+@media screen and (max-width: 670px) {
+  .navlinks {
+    display: none;
+  }
+  .nav-content {
+    display: none;
+  }
+  #logo2 {
+    position: relative;
+    margin-left: 230px;
+    height: 60px;
+    transition: all 1s ease;
+  }
+  #subnav {
+  max-width: 100%;
+  background: white;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 0px;
+  left: 0px;
+  justify-content: center;
+}
+}
+
+
 </style>
