@@ -62,14 +62,14 @@ export default {
   width: 80px;
   height: 60px;
   position: relative;
-  left: 30px;
+  left: -130px;
 }
 #navbarSupportedContent{
   padding: 0px 60px;
 }
 #logo2 {
   position: relative;
-  left: -10px;
+  left: -300px;
 }
 #subnav {
   width: 100vw;
@@ -142,7 +142,7 @@ a:hover,
   }
   #logo2 {
     position: relative;
-    left: 20px;
+    left: -120px;
     height: 80px;
   }
   #subnav {
@@ -180,7 +180,7 @@ a:hover,
   }
   #logo2 {
     position: relative;
-    left: -20px;
+    left: -120px;
     height: 60px;
     transition: all 1s ease;
   }
