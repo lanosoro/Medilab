@@ -19,14 +19,14 @@
         </div>
       </v-carousel-item>
     </v-carousel>
-    <bodycom/>
+    <bodycom />
   </div>
 </template>
 
 <script>
-import bodycom from '../components/bodycom.vue';
+import bodycom from "../components/bodycom.vue";
 export default {
-  components: {bodycom},
+  components: { bodycom },
   data() {
     return {
       colors: [
@@ -162,7 +162,6 @@ table :nth-of-type(2) {
     z-index: 99;
     width: 60%;
     background-color: rgba(0, 116, 165, 0.6);
-  
   }
 }
 </style>

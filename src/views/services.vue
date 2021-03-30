@@ -1,5 +1,5 @@
 <template>
-  <div style="position:relative; top:0px; bottom:20vh; width:100%;">
+  <div style="position:relative; top:0px; bottom:20vh; height:250vh; width:100%;">
     <div class="Main">
       <v-carousel
         hide-delimiters
@@ -15,37 +15,40 @@
           :key="i"
           :src="require('../assets/' + item)"
         >
-          <v-card class="services_page" elevation="5">
+          <div class="services_page" elevation="5">
             <v-card-title
-              class=""
+              class="title"
               style="position:relative; left:0px; top:20px;  font-size: 8vh;"
               >Our Services</v-card-title
             >
-          </v-card>
+          </div>
         </v-carousel-item>
       </v-carousel>
     </div>
-    <!-- <v-card
+    <div
       class="services col-md-12  row container-fluid"
       v-for="service in services"
       :key="service"
     >
       <span style="line-height: 2.0em; font-family:inherit;">
-        <span>
+        <li>
           {{ service }}
-        </span>
+        </li>
       </span>
-    </v-card>
-    <div style="position:relative; top:1vh; right:0px; left:50px;">
-      <p>We are committed to doing this by:</p>
     </div>
+    <div style="position:relative; top:1vh; right:0px; left:5px;">
+      <p style="font-weight:600; font-size:18px; margin-left:5px;">We are committed to doing this by:</p>
+     
+    </div>
+    
     <div class="commitment" v-for="commit in commits" :key="commit">
+       
       <ul style="">
         <li>
           {{ commit }}
         </li>
       </ul>
-    </div> -->
+    </div>
   </div>
 </template>
 <script>
@@ -109,7 +112,8 @@ export default {
   position: relative;
   top: 15vh;
   right: 0px;
-  left: 50px;
+  left: 10px;
+  flex: wrap;
 }
 .services_page {
   position: absolute;
@@ -129,13 +133,44 @@ export default {
   }
 
   .services_page {
-    position: absolute;
-    top: 150px;
-    left: 50px;
-    height: 15vh;
-    width: fit-content;
-    background-color: #28b6e7;
-    opacity: 0.8;
+   position: absolute;
+    margin-bottom: -290px;
+    display: inline-block;
+    font-size: 18px;
+    left: 250px;
+    right: 0px;
+    width: 100%;
+    height: 260px;
+    z-index: 99;
+
+    background-color: rgba(0, 116, 165, 0.6);
+  }
+  .title{
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 345px) {
+  .services {
+    position: relative;
+    top: 0vh;
+    left: 10px;
+  }
+
+  .services_page {
+   position: absolute;
+    margin-bottom: -290px;
+    display: inline-block;
+    font-size: 13px;
+    left: 250px;
+    right: 0px;
+    width: 100%;
+    height: 260px;
+    z-index: 99;
+
+    background-color: rgba(0, 116, 165, 0.6);
+  }
+  .title{
+    font-size: 1px;
   }
 }
 </style>

@@ -5,24 +5,45 @@
         <a href="#"
           ><img
             id="logo2"
-            height="90px"
+            height="100px"
             src="http://medilab.co.ke/wp-content/uploads/2017/04/logo-medilab.jpg"
             alt=""
             srcset=""
         /></a>
       </div>
-      <div class="small">
-        <i class="fas fa-bars"></i>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+ <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Services">services</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-      <v-flex class="subnav-content">
+    </div>
+  </nav>
+      <!-- <v-flex class="subnav-content">
         <div class="nav-content">
           <div class="navlinks"><a href="#">Home</a></div>
-          <div class="navlinks"><a href="#">Products</a></div>
+          <div class="navlinks"><a href="#"></a></div>
           <div class="navlinks"><a href="#">Services</a></div>
           <div class="navlinks"><a href="#">About Us</a></div>
           <div class="navlinks"><a href="#">Contact Us</a></div>
         </div>
-      </v-flex>
+      </v-flex> -->
     </v-layout>
   </section>
 </template>
@@ -32,6 +53,10 @@ export default {
 };
 </script>
 <style scoped>
+.container{
+  position: relative;
+  left: 500px;
+}
 #logo {
   padding: 40px;
   width: 80px;
@@ -39,9 +64,12 @@ export default {
   position: relative;
   left: 30px;
 }
+#navbarSupportedContent{
+  padding: 0px 60px;
+}
 #logo2 {
   position: relative;
-  left: 100px;
+  left: -10px;
 }
 #subnav {
   width: 100vw;
@@ -64,6 +92,9 @@ export default {
   margin-right: 0;
   right: 0px;
   margin-left: 500px;
+}
+#menu{ 
+  display: none;
 }
 .nav-content {
   color: #fff;
@@ -102,6 +133,10 @@ a:hover,
   .navlinks {
     display: none;
   }
+  .container{
+  position: relative;
+  left: 500px;
+}
   .nav-content {
     display: none;
   }
@@ -122,16 +157,30 @@ a:hover,
   justify-content: center;
 }
 }
+@media only screen and (max-width: 767px) {
+      .navbar-nav.ml-auto {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .navbar-nav a {
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
 @media screen and (max-width: 670px) {
   .navlinks {
     display: none;
   }
+  .container{
+  position: relative;
+  left: 500px;
+}
   .nav-content {
     display: none;
   }
   #logo2 {
     position: relative;
-    margin-left: 230px;
+    left: -20px;
     height: 60px;
     transition: all 1s ease;
   }
@@ -145,6 +194,44 @@ a:hover,
   right: 0px;
   left: 0px;
   justify-content: center;
+}
+}
+@media screen and (max-width: 450px) {
+  .navlinks {
+    display: none;
+  }
+  .nav-content {
+    display: none;
+  }
+  .container{
+  position: relative;
+  right: 0px;
+  transition: all 1s ease;
+}
+  #logo2 {
+    position: relative;
+    left: 64px;
+    height: 60px;
+    transition: all 1s ease;
+  }
+  #menu{
+    position: relative;
+    left: 300px;
+  }
+  #subnav {
+  max-width: 100%;
+  background: white;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 0px;
+  left: 0px;
+  justify-content: center;
+}
+.small{
+  right:0px;
+  position: absolute;
 }
 }
 

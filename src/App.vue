@@ -60,6 +60,7 @@ header {
   margin-left: 0vw;
   box-sizing: border-box;
   min-height: 100vh;
+  overflow: none;
   position: relative;
 }
 #desktop-nav {
