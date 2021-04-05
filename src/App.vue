@@ -5,7 +5,7 @@
     </header>
     <!-- <the-desktop-nav id="desktop-nav" class="d-sm-none d-md-flex" /> -->
 
-    <subnav id="subnav" />
+    
     <div class="view-container">
       <router-view />
     </div>
@@ -23,13 +23,13 @@
 <script>
 // import TheDesktopNav from "./components/TheDesktopNav.vue";
 import mobinav from "./components/mobinav";
-import Subnav from "./components/subnav.vue";
+
 import topfooter from "./components/footer2";
 export default {
   components: {
     // TheDesktopNav,
     mobinav,
-    Subnav,
+  
     topfooter
   }
 };
@@ -42,7 +42,8 @@ header {
   position: relative;
   left: 0;
   right: 0;
-  background: #28b6e7;
+  color: #28b6e7;
+  background: white;
 }
 
 #topfooter {
@@ -67,6 +68,7 @@ header {
   display: none;
 }
 #mobinav {
+  z-index: 10000;
 }
 @media screen and (max-width: 950px) {
   #desktop-nav {
@@ -83,6 +85,15 @@ header {
     flex-direction: column;
     width: 100%;
   }
+  
+header{
+    position: sticky;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+}
+
   #subnav {
     display: flex;
     flex-direction: column;

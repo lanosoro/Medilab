@@ -1,60 +1,76 @@
 <template>
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>
-            Why Medilabs Ltd
-          </h4>
-          <p style="color:white;">
-            We believe "Quality is not an act, it is a Habit,” Committed to
-            develop, sustain high quality in manufacturing of drug formulations
-            in order to meet the customers satisfaction.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4>
-            Our Main Goal
-          </h4>
-          <p style="color:white;">
-            Medilabs main goal is to provide quality healthcare to all through a
-            wide range of healthcare products that meet individual customer
-            needs.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4>
-            other Links
-          </h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>
-            follow Us
-          </h4>
-          <div class="social-links">
+      <div class="sec aboutus">
+        <h3>
+          About Us
+        </h3>
+        <p>
+          Medilab & Allied Products K Ltd is a Kenyan company, which is
+          committed to providing Medical and Research Reagents and Consumables,
+          Water treatment chemicals, Cooling Tower/Boiler/Chiller chemicals and
+          Condition Monitoring reagents/Sensors.
+        </p>
+        <ul class="sci">
+          <li>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
             <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
             <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <form action="#">
-            <input type="email" name="email" placeholder="email" id="" />
-            <input type="button" value="" />
-          </form>
-        </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sec links">
+        <h3>
+          Other Links
+        </h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+        </ul>
+      </div>
+      <div class="sec contact">
+        <h3>Contact Info</h3>
+        <ul class="info">
+          <li>
+            <span style="font-size:13px"><i></i>MEDILAB AND ALLIED PRODUCTS (K) LTD,</span>
+          </li>
+          <li>
+            <span
+              ><i class="fa fa-map-marker" aria-hidden="true"></i> GENERAL
+              WARUINGE ROAD, OLD RACE COURSE, STAREHE COURT 7638 (2), P.O BOX
+              14705-00400, NAIROBI, KENYA</span
+            >
+          </li>
+          <li>
+            <span
+              ><i class="fa fa-phone"></i> +254 721 811 499, +254 734 768 110,
+              +254 020 4401525, +254 774 768 110</span
+            >
+          </li>
+          <li>
+            <span style="line-height:1.5em;"
+              ><i class="fa fa-envelope"></i> sales@medilaballied.com
+              info@medilaballied.com medilab.alliedproductsltd@gmail.com</span
+            >
+          </li>
+        </ul>
       </div>
     </div>
     <div id="bottomfooter">
-      Copyright © {{ new Date().getFullYear() }}· All Rights Reserved · Medilabs
+     <p style="font-size:12px;"> Copyright © {{ new Date().getFullYear() }}· All Rights Reserved · Medilabs
       Ltd Web design by ·<span id="link">
-        <a href="http://fineteklabs.com"> Finetek</a>
-      </span>
+        <a href="http://fineteklabs.com"> Fineteklabs</a>
+      </span></p>
     </div>
   </footer>
 </template>
@@ -63,189 +79,206 @@
 export default {};
 </script>
 
-<style scoped>
-.footer {
-  background-color: #0074a5;
-  padding: 60px 60px 0px 0px;
-  widows: 100vw;
-}
-#footer {
-  bottom: 0;
+<style>
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 50vh;
+  flex-direction: column;
+  background: #0074a5;
+  padding: 40px;
   width: 100%;
+  position: relative;
+  flex-wrap: wrap;
 }
-#link {
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+  flex-direction: row;
+  max-width: 100%;
+  top: -18px;
+  left: -18px;
+  position: relative;
+}
+footer .container .sec {
+  margin-right: 0px;
+  font-size: 14px;
+}
+footer .container .sec.aboutus {
+  width: 40%;
+  color: white;
+  word-spacing: 0.2em;
+}
+.sci {
+  margin-top: 20px;
+  display: flex;
+}
+.sci li {
+  list-style: none;
+}
+.sec.aboutus h3::before {
+  content: "";
+  position: absolute;
+
+  background: white;
+  height: 2px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 100px;
+}
+.sci li a {
+  display: inline-block;
+  width: 40px;
+
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
   text-decoration: none;
-  color: inherit;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s ease-in-out;
+  margin-right: 35px;
+  transition: all 1s ease;
 }
-#link::before {
-  font-size: 28px;
+.sci li a:hover {
+  background: white;
+  color: #0074a5;
 }
-#link::after {
-  font-size: 18px;
+.links li a {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-decoration: none;
+  margin-right: 35px;
+  transition: all 1s ease;
+}
+.links li {
+  list-style: none;
+}
+footer .container .links {
+  width: 25%;
+  position: relative;
+  color: white;
+}
+.links ul li {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  display: flex;
+  text-align: left;
+  align-self: auto;
+  align-items: left;
+  flex-wrap: wrap;
+  transition: all 0.1s ease-in;
+  word-spacing: 0.2em;
+}
+.links ul li:hover {
+  font-weight: 600;
+  font-size: 19px;
+}
+.links h3::before {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 2px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 100px;
+}
+.contact {
+  width: calc(35% - 70px);
+  margin-right: 0 !important;
+  color: white;
+  list-style: none;
+}
+.contact .info {
+  position: relative;
+}
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+  word-spacing: 0.1em;
+  padding-top: 6px;
+}
+.contact h3::before {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 2px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 100px;
 }
 #bottomfooter {
-  position: relative;
-  left: 0;
+  position: absolute;
+  left: auto;
   right: 0;
+  font-size: 12px;
+  margin-top: 300px;
+  bottom: 0px;
   background: #28b6e7;
-  width: 100vw;
+  width: 100%;
   padding: 30px;
-  margin-left: 0;
   color: white;
   font-weight: 400;
   font-size: 18px;
   justify-content: center;
   text-align: center;
-  margin-top: 70px;
 }
-.container {
-  max-width: 1170px;
-
-  margin: auto;
-}
-.footer-col {
-  width: 25%;
-  padding: 0 35px;
-}
-.footer-col h4 {
-  font-size: 28px;
-  color: inherit;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 700;
-  position: relative;
-}
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0%;
-  bottom: -10px;
-  background: white;
-  height: 2px;
-  box-sizing: border-box;
-  width: 150px;
-}
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer-col ul li a {
-  font-size: 16px;
-  text-transform: capitalize;
-  font-weight: 300;
-  display: block;
-  text-decoration: none;
-}
-.footer-col ul li a:hover {
-  padding: 8px;
-
-  font-size: 19px;
-  shadow: rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-in-out;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.footer-col .social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  transition: all 1s ease;
-}
-.footer-col .social-links a:hover {
-  background: white;
-  color: #0074a5;
-}
-/*responsive */
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    padding: 0 15px;
-    margin-bottom: 30px;
-    font-size: 14px;
+@media screen and (max-width: 991px) {
+  footer {
+    padding: 20px;
   }
-  .container {
-    max-width: 100%;
-
-    margin: auto;
-  }
-
-  .container #bottmfooter {
-    max-width: 100%;
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    left: -10;
-    right: 0;
-    background: #28b6e7;
-
-    padding: 30px;
+    left: -10px;
+  }
+  .container .sec {
     margin-right: 0;
-    margin: auto;
+    margin-bottom: 40px;
   }
   #bottomfooter {
-  }
-}
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
-    font-size: 14px;
-  }
-  .container {
-    max-width: 100%;
-  }
-  .footer {
-    padding: 0px 0px;
-
-    font-size: 14px;
-    text-align: center;
-  }
-  .container #bottomfooter {
-    max-width: 100%;
-    position: relative;
-    left: -10;
-    right: 0;
-    background: #28b6e7;
-
-    padding: 30px;
-    margin-right: 0;
-  }
-  #bottomfooter {
-    position: relative;
-    left: 0;
-    right: 0;
-    font-size: 12px;
-    max-width: 100%;
-    padding: 30px;
-  }
-  .footer-col h4 {
-    font-size: 28px;
-    color: white;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 700;
-    position: relative;
-  }
-  .footer-col h4::before {
-    content: "";
     position: absolute;
-    left: 28%;
-    bottom: -10px;
-    background: white;
-    height: 2px;
-    box-sizing: border-box;
-    width: 150px;
+    left: auto;
+    right: 0;
+    bottom: 0px;
+    background: #28b6e7;
+    width: 100vw;
+    padding: 8px 40px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
   }
+  h3 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 300px;
+    color: inherit;
+  }
+  .contact .info {
+    position: relative;
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 600px) {
+
+footer .container .sec.aboutus p{
+  width: 300px;
+}
 }
 </style>

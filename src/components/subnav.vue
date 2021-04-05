@@ -13,14 +13,14 @@
       </div>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
- <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+ 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="products">Products</a>
+            <a class="nav-link" href="products">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/Services">services</a>
@@ -55,7 +55,8 @@ export default {
 <style scoped>
 .container{
   position: relative;
-  left: 500px;
+  left: 400px;
+  width: 600px;
 }
 #logo {
   padding: 40px;
@@ -96,19 +97,19 @@ export default {
 #menu{ 
   display: none;
 }
-.nav-content {
+.nav-item {
   color: #fff;
   padding: 10px 20px;
   position: relative;
   text-align: center;
   border-bottom: 3px solid transparent;
   display: flex;
-  left: 0px;
+  left: -100px;
 
   padding: auto;
 }
-.navlinks {
-  color: #fff;
+.nav-link {
+  color: blue;
   padding: 1px 20px;
   position: relative;
   text-align: center;
@@ -121,16 +122,17 @@ a {
   text-decoration: none;
   color: blue;
 }
-.navlinks.active,
+.nav-link.active,
 a:hover,
-.navlinks:hover {
+.nav-link:hover {
   color: #00aeff;
   border-bottom-color: #00aeff;
   transition: width 2.4s linear;
   transition-property: border-bottom;
+  
 }
 @media screen and (max-width: 1150px) {
-  .navlinks {
+  .nav-link {
     display: none;
   }
   .container{
@@ -168,7 +170,7 @@ a:hover,
       }
     }
 @media screen and (max-width: 670px) {
-  .navlinks {
+  .nav-link {
     display: none;
   }
   .container{
@@ -197,7 +199,7 @@ a:hover,
 }
 }
 @media screen and (max-width: 450px) {
-  .navlinks {
+  .nav-link {
     display: none;
   }
   .nav-content {

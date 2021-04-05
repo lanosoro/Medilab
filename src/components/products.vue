@@ -1,123 +1,125 @@
 <template>
-<div class="container">
-  <nav>Navbar</nav>
-  <main>Main</main>
-  <div id="sidebar">Sidebar</div>
-  <div id="content1">Content1</div>
-  <div id="content2">Content2</div>
-  <div id="content3">Content3</div>
-  <footer>Footer</footer>
-</div>
-
+  <section class="project-area">
+    <div class="container">
+      <div class="project-title pt-4">
+        <h1 class="text-uppercase title-h1">
+          Products Range
+        </h1>
+      </div>
+      <div class="button-group">
+        <button type="reset" class="active">All</button>
+        <button type="reset" data-filter="water">Water Treatement</button>
+        <button type="reset" data-filter="medical">Medical</button>
+        <button type="reset">Scientific</button>
+      </div>
+      <div class="row grid">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item water">
+          <div class="our-products">
+            <div class="image">
+              <img src="@/assets/watertreatmenticon.png" alt="">
+            </div>
+            <div class="title py-4">
+              <h4 style="font-weight:700" class="text-uppercase">
+                water treatment
+              </h4>
+              <span class="text-secondary">
+                water treatment chemicals Solutions
+              </span>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+          <div class="our-products">
+            <div class="image">
+              <img src="@/assets/kitchenhygieneicon.png" alt="">
+            </div>
+            <div class="title py-4">
+              <h4 style="font-weight:700" class="text-uppercase">
+                water treatment
+              </h4>
+              <span class="text-secondary">
+                water treatment chemicals Solutions
+              </span>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item medical">
+          <div class="our-products">
+            <div class="image">
+              <img src="@/assets/personalcareicon.png" alt="">
+            </div>
+            <div class="title py-4">
+              <h4 style="font-weight:700" class="text-uppercase">
+                personal hygiene
+              </h4>
+              <span class="text-secondary">
+                water treatment chemicals Solutions
+              </span>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+          <div class="our-products">
+            <div class="image">
+              <img src="@/assets/workshopicon.png" alt="">
+            </div>
+            <div class="title py-4">
+              <h4 style="font-weight:700" class="text-uppercase">
+                Workshop
+              </h4>
+              <span class="text-secondary">
+                water treatment chemicals Solutions
+              </span>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-export default {};
+
+export default {
+
+}
 </script>
 
 <style scoped>
- :root {
-  --main-radius: 5px;
-  --main-padding: 5px;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-}
-
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-  grid-template-areas:
-    "nav nav nav nav"
-    "sidebar main main main"
-    "sidebar content1 content2 content3"
-    "sidebar footer footer footer";
-  grid-gap: 0.2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #004d40;
-  text-align: center;
-}
-
-nav {
-  background: #a7ffeb;
-  grid-area: nav;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
-
-main {
-  background: #84ffff;
-  grid-area: main;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
-
-#sidebar {
-  background: #18ffff;
-  grid-area: sidebar;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
-
-#content1 {
-  grid-area: content1;
-    width: 18%;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    margin: 1%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 20px
-}
-
-#content2 {
-  background: #64ffda;
-  grid-area: content2;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
-
-#content3 {
-  background: #73ffba;
-  grid-area: content3;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
-
-footer {
-  background: #1de9b6;
-  grid-area: footer;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
-
-a {
-  text-align: center;
+.container{
   display: block;
-  font-family: inherit;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 1rem;
 }
-
-@media only screen and (max-width: 550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "content1"
-      "content2"
-      "content3"
-      "footer";
-  }
+.button-group{
+  justify-content: space-around;
+  justify-items: stretch;
+}
+button{
+  padding: 15px;
+  background: transparent;
+  font: 600 19px/130px;
+  font-weight: 700;
+  left: 5px;
+  color: black;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+}
+button + button{
+  padding-left: 3rem;
+}
+button:focus,button:active,button:hover,.btn:active,.btn.active{
+  outline: 0px !important;
+  box-shadow: rgba(0, 0, 0, 0.3);
+}
+.project-area{
+  padding: 4rem 0;
 }
 </style>

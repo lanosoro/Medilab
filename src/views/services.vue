@@ -1,5 +1,7 @@
 <template>
-  <div style="position:relative; top:0px; bottom:20vh; height:250vh; width:100%;">
+  <div
+    style="position:relative; top:0px; bottom:20vh; height:250vh; width:100%;"
+  >
     <div class="Main">
       <v-carousel
         hide-delimiters
@@ -30,19 +32,14 @@
       v-for="service in services"
       :key="service"
     >
-      <span style="line-height: 2.0em; font-family:inherit;">
+      <span style="line-height: 3.0em; font-family:inherit;">
         <li>
           {{ service }}
         </li>
       </span>
     </div>
-    <div style="position:relative; top:1vh; right:0px; left:5px;">
-      <p style="font-weight:600; font-size:18px; margin-left:5px;">We are committed to doing this by:</p>
-     
-    </div>
-    
+
     <div class="commitment" v-for="commit in commits" :key="commit">
-       
       <ul style="">
         <li>
           {{ commit }}
@@ -57,21 +54,15 @@ export default {
     return {
       slides: ["servicesbanner.jpg"],
       services: [
-        "Supply of quality food grade detergents to cater for all cleaning & hygiene needs.",
-        "Preparation of a detailed cleaning manual for the factories to ensure a harmonized cleaning and hygiene system.",
-        "Technical support to ensure good and consistent cleaning and hygiene results and to resolve quality challenges encountered from time to time.",
-        "Analysis of utilities water( boilers, cooling towers, pasteurizers, ETP and process water treatment to confirm that the treatment regime are delivering the desired results.",
-        "Quarterly trainings to ensure continuous improvement in the factories.",
-        "Supply of high quality dosing and control equipment to ensure accurate and consistent dosing of the chemicals.",
-        "Regular visit to the factory to monitor the cleaning and hygiene standards, and to identify any areas requiring urgent attention.",
-        "Reports to the management indicating the levels of hygiene, cost trends against the budget, projects in progress and recommendations for improvements.",
-        "Periodic audits for the entire factory to identify major improvement projects."
+        "edilab & Allied Products K Ltd is a Kenyan company, which is committed to providing Medical and Research Reagents and Consumables, Water treatment chemicals, Cooling Tower/Boiler/Chiller chemicals and Condition Monitoring reagents/Sensors."
       ],
       commits: [
-        "Investing the time to listen, understand and respond to customers’ unique cleaning and hygiene needs.",
-        "Taking a personal interest to ensure the facilities they care for are consistently clean, safe and attractive.",
-        "Pursuing innovation in every form likely to make the lives of our customers simpler and more profitable.",
-        "Customer collaborating to exceed their expectations, every day, everywhere."
+        "Our Customers:",
+        "Power Plants",
+        "Research Institutions",
+        "Hospitals",
+        "Food Processors",
+        "Across East and West"
       ],
 
       products_lable: [
@@ -99,8 +90,11 @@ export default {
   display: flex;
 }
 .container {
-  height: 400px;
+  height: 100vh;
   display: "flex";
+  justify-content: space-between;
+  align-content: center;
+  font-size: 19px;
 }
 .services {
   position: relative;
@@ -133,7 +127,7 @@ export default {
   }
 
   .services_page {
-   position: absolute;
+    position: absolute;
     margin-bottom: -290px;
     display: inline-block;
     font-size: 18px;
@@ -145,7 +139,7 @@ export default {
 
     background-color: rgba(0, 116, 165, 0.6);
   }
-  .title{
+  .title {
     font-size: 100px;
   }
 }
@@ -157,7 +151,7 @@ export default {
   }
 
   .services_page {
-   position: absolute;
+    position: absolute;
     margin-bottom: -290px;
     display: inline-block;
     font-size: 13px;
@@ -169,7 +163,7 @@ export default {
 
     background-color: rgba(0, 116, 165, 0.6);
   }
-  .title{
+  .title {
     font-size: 1px;
   }
 }

@@ -1,5 +1,8 @@
 <template>
-  <div id="container" style="position:relative; top:0px; bottom:20vh; width:100%;">
+  <div
+    id="container"
+    style="position:relative; top:0px; bottom:20vh; width:100%;"
+  >
     <div class="Main">
       <v-carousel
         hide-delimiters
@@ -26,18 +29,15 @@
       </v-carousel>
     </div>
     <products />
-    </div>
+  </div>
 </template>
 <script>
-import products from '../components/products.vue';
+import products from "../components/products.vue";
 export default {
   components: { products },
   data() {
     return {
-      slides: ["products.jpg"],
-     
-
-    
+      slides: ["products.jpg"]
     };
   }
 };
@@ -54,6 +54,7 @@ export default {
 .container {
   height: 300px;
   display: "flex";
+  min-height: 100vh;
 }
 .services {
   position: relative;
@@ -70,11 +71,11 @@ export default {
   right: 0px;
   left: 50px;
 }
-#products{
-    padding: 100px;
-    position: relative;
-    bottom: 40px;
-    left: 8%;
+#products {
+  padding: 100px;
+  position: relative;
+  bottom: 40px;
+  left: 8%;
 }
 .services_page {
   position: absolute;
@@ -105,24 +106,23 @@ export default {
   padding: 50px 80px;
 }
 @media only screen and (max-width: 400px) {
-    #container{
-        height: 100%;
-        overflow: auto;
-    }
+  #container {
+    height: 100%;
+    overflow: auto;
+  }
   .services {
     position: relative;
     top: 0vh;
     left: 10px;
   }
-  #products{
-      height: 150vh;
-      display: block;
-      position: relative;
-      right: 100pxsss;
+  #products {
+    height: 150vh;
+    display: block;
+    position: relative;
+    right: 100pxsss;
   }
-  .productcontainer{
-      align-content: center;
-      
+  .productcontainer {
+    align-content: center;
   }
   .productcategory {
     display: flex;
@@ -156,22 +156,21 @@ export default {
   }
 }
 @media only screen and (max-width: 758px) {
-    #container{
-        height: 100%;
-        overflow: auto;
-    }
+  #container {
+    height: 100%;
+    overflow: auto;
+  }
   .services {
     position: relative;
     top: 0vh;
     left: 10px;
   }
-  #products{
-      height: 100%;
-      display: block;
+  #products {
+    height: 100%;
+    display: block;
   }
-  .productcontainer{
-      align-content: center;
-      
+  .productcontainer {
+    align-content: center;
   }
   .productcategory {
     display: flex;

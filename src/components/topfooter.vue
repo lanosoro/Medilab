@@ -5,15 +5,17 @@
         <div class="tfcontent-item" id="contacts">
           <span id="contactus">Contact Us</span>
           <div class="contacts">
-            <p>
-              Odex Chemicals Limited,<br />
-              Kyang’ombe Road, Off Mombasa Road,<br />
-              Behind Ramtons, Opposite Clique,<br />
-              P.O Box 72390 – 00200,<br />
-              Nairobi, Kenya.br <br />
-              Tel: 020-2347131/32 <br />
-              Mobile: 0713064662 <br />
-              Email: info@odexchem.co.ke
+            <p style="color:#999;">
+              MEDILAB AND ALLIED PRODUCTS (K) LTD, <br />
+              GENERAL WARUINGE ROAD,<br />
+              OLD RACE COURSE, STAREHE COURT 7638 (2),<br />
+              P.O BOX 14705-00400,<br />
+              NAIROBI, KENYA <br />
+              TEL: +254 721 811 499, +254 734 768 110, +254 020 4401525, +254
+              774 768 110 <br />
+              EMAIL: sales@medilaballied.com info@medilaballied.com <br />
+
+              medilab.alliedproductsltd@gmail.co
             </p>
           </div>
         </div>
@@ -78,7 +80,8 @@ export default {
   position: relative;
   text-align: center;
   border-bottom: 3px solid transparent;
-  display: flex;
+  display: grid;
+  gap: 3em;
   left: 0;
   padding: auto;
 }

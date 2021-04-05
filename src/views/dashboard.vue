@@ -1,167 +1,91 @@
 <template>
-  <div fluid fill-height class="pa-0" id="container">
-    <div class="over"></div>
-    <v-carousel
-      id="display"
-      cycle
-      height="650"
-      width="100vw"
-      hide-delimiter-background
-      show-arrows-on-hover
-      hide-delimiters
-      hide-arrows
-      :show-arrows="false"
-    >
-      <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.src">
-        <div class="header">
-          <h1 style="margin-left:5vw; margin-top:8%;">{{ slide.info }}</h1>
-          <p style="margin-left:5vw; margin-top:30px;">{{ slide.body }}</p>
-        </div>
-      </v-carousel-item>
-    </v-carousel>
-    <bodycom />
-  </div>
+  <section class="main">
+    <v-container class="fluid">
+      <v-row class="row">
+        <v-col>
+          <div class="main-image col-lg-14 col-md-14">
+          
+            
+          <div class="col-lg-14 col-md-14">
+             <img class="image" height="400px" width="100%" src="@/assets/londro.jpg" alt="fire extinguisher">
+          </div>
+              <div class="col-lg-12 col-md-14 main-title">
+                
+                <h2 class="text-uppercase pt-4">
+                 About Medilab Allied
+                </h2>
+                <div class="paragraph py-4 w-75">
+                  <p class="para" style="font-size:18px; color:black;font-weight:600; ">
+                    Medilab & Allied Products K Ltd is a Kenyan company,<br> which is committed to providing Medical and Research Reagents and Consumables,<br>
+                    Water treatment chemicals, Cooling Tower/Boiler/Chiller chemicals and Condition Monitoring reagents/Sensors.
+                  </p>
+               
+                  <button style="background: blue; color:white; padding:20px; border-radius:10px;" type="button" class="btn primary-button text-uppercase">
+                    <a style="text-decoration:none; color:white; padding:30px" href="#">Learn More</a>
+                  </button>
+
+                </div>
+              </div>
+          </div>
+        </v-col>
+
+      </v-row>
+    </v-container>
+  </section>
 </template>
 
 <script>
-import bodycom from "../components/bodycom.vue";
 export default {
-  components: { bodycom },
-  data() {
-    return {
-      colors: [
-        "http://www.odexchemicals.com/wp-content/uploads/2020/09/contactusbanner.jpg",
-        "warning",
-        "pink darken-2",
-        "red lighten-1",
-        "deep-purple accent-4"
-      ],
-      justify: ["start", "center", "end", "space-around", "space-between"],
-      slides: [
-        {
-          src:
-            "http://www.odexchemicals.com/wp-content/uploads/2020/09/homeslider01.jpg",
-          info: "25 years of expertise",
-          body: "we manufacture specialized deterents and sanitation products"
-        },
-        {
-          src:
-            "http://www.odexchemicals.com/wp-content/uploads/2020/09/HouseKeeping-Range.jpg",
-          info: "We are the hygiene solution",
-          body: "we have a wide range of housekeeping Solutions"
-        },
-        {
-          src:
-            "http://www.odexchemicals.com/wp-content/uploads/2020/09/Conveyer-Systems-Slider.jpg",
-          info: "Wide Range of products",
-          body: "Check out our conveyor Lubes"
-        }
-      ]
-    };
-  }
-};
+
+}
 </script>
 
 <style scoped>
-.home-card {
-  background: #333;
-
-  width: 100%;
-  color: white;
+.main{
+  padding: 3rem 2rem;
 }
-
-#container {
+.main .main-title >h2{
+  font: normal bold 49px/60px ;
   display: block;
-  left: 0;
-  right: 0;
-  position: relative;
+  font-weight: 900;
+  letter-spacing: 15px;
 }
-.over {
-  position: absolute;
-  bottom: 30%;
-  left: 0;
-
-  z-index: 99;
-  width: 60%;
-  background-color: rgba(0, 116, 165, 0.6);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-#display {
-  position: relative;
-  left: 0;
-}
-.header {
-  position: absolute;
-  bottom: 30%;
-  display: block;
-  left: 0;
-  width: 903px;
-  height: 260px;
-  z-index: 99;
-  width: 60%;
-  background-color: rgba(0, 116, 165, 0.6);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.card-title {
+.row{
   display: flex;
-  align-items: center;
-  background: #222;
-  border-radius: 8px;
+  flex-direction: row;
+  
 }
-.subtitle {
-  display: grid;
+
+.main-image{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.avatar {
-  widows: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  margin: 5px 30px;
+
+.image{
+  position: relative;
+  left: -100px;
 }
-.subtitle > p {
-  margin-bottom: 0;
-  color: blue;
-}
-.card-content {
-  line-height: 1.5;
-  margin: 30px auto;
-}
-table {
-  border-spacing: 0px;
-  margin: 50px auto;
-}
-tr th,
-tr td {
-  border: 1px solid white;
-  border-top: none;
-  padding: 10p;
-  text-align: none;
-}
-table :first-of-type {
-  border-left: none;
-}
-table :nth-of-type(2) {
-  border-right: none;
-}
-#footer {
-  position: absolute;
-  bottom: 0;
-}
-@media screen and (max-width: 1096px) {
-  #display {
-    height: 400px;
+@media  (max-width: 991px) {
+  .main-image{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
   }
-  .header {
-    position: absolute;
-    bottom: 0%;
-    left: 0px;
-    right: 0px;
-    max-width: 1096px;
-    height: 260px;
-    z-index: 99;
-    width: 60%;
-    background-color: rgba(0, 116, 165, 0.6);
+}
+@media  (min-width: 301px) {
+  .main-image{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    width: 100%;
   }
+  p{
+    width: 85vw;
+    
+    overflow: hidden;
+  }
+
+
 }
 </style>
