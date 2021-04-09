@@ -42,7 +42,9 @@
         <h3>Contact Info</h3>
         <ul class="info">
           <li>
-            <span style="font-size:13px"><i></i>MEDILAB AND ALLIED PRODUCTS (K) LTD,</span>
+            <span style="font-size:13px"
+              ><i></i>MEDILAB AND ALLIED PRODUCTS (K) LTD,</span
+            >
           </li>
           <li>
             <span
@@ -67,10 +69,12 @@
       </div>
     </div>
     <div id="bottomfooter">
-     <p style="font-size:12px;"> Copyright © {{ new Date().getFullYear() }}· All Rights Reserved · Medilabs
-      Ltd Web design by ·<span id="link">
-        <a href="http://fineteklabs.com"> Fineteklabs</a>
-      </span></p>
+      <p style="font-size:12px;">
+        Copyright © {{ new Date().getFullYear() }}· All Rights Reserved ·
+        Medilabs Ltd Web design by ·<span id="link">
+          <a href="http://fineteklabs.com"> Fineteklabs</a>
+        </span>
+      </p>
     </div>
   </footer>
 </template>
@@ -276,9 +280,8 @@ footer .container .links {
   }
 }
 @media screen and (max-width: 600px) {
-
-footer .container .sec.aboutus p{
-  width: 300px;
-}
+  footer .container .sec.aboutus p {
+    width: 300px;
+  }
 }
 </style>

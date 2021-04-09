@@ -36,7 +36,7 @@
             reagents/Sensors.</span
           >
         </h3>
-        <a class="containera" href="/products">Our Products</a>
+        <a class="containera" href="products">Our Products</a>
       </div>
     </section>
     <section class="products" id="products">
@@ -44,12 +44,12 @@
         <div class="card">
           <div class="cotent">
             <h1>01</h1>
-            <!-- <img
+            <img
               height="120px"
               width="200px"
               src="..\assets\380-3808023_medical-supplies-medical-supplies-transparent.png"
               alt=""
-            /> -->
+            />
             <h3>Medical supplies</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -62,11 +62,11 @@
         <div class="card">
           <div class="cotent">
             <h1>02</h1>
-            <!-- <img
+            <img
               height="120px"
               src="..\assets\158-1584784_how-chemical-cleaning-supplies-can-help-you-boost.png"
               alt=""
-            /> -->
+            />
             <h3>Chemical Reagent</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -79,11 +79,11 @@
         <div class="card">
           <div class="cotent">
             <h1>03</h1>
-            <!-- <img
+            <img
               height="120px"
               src="..\assets\Important-Processes-for-Food-Processing-and-Packaging.jpg"
               alt=""
-            /> -->
+            />
             <h3>Processing factory</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -113,7 +113,7 @@
                     class="input"
                     placeholder="Username"
                   />
-                  <label for="">Username</label>
+                  s<label for="">Username</label>
                 </div>
                 <div class="input-container">
                   <input
@@ -421,8 +421,7 @@ s
   transform: translateY(0px);
   opacity: 1;
 }
-.container .card .cotent p {
-}
+
 .container .card .cotent h1 {
   position: absolute;
   top: -10px;
@@ -431,8 +430,7 @@ s
   color: rgba(0, 0, 0, 0.426);
   pointer-events: none;
 }
-.container .card .cotent h1 {
-}
+
 .container .card .cotent a {
   position: relative;
   display: inline-block;
