@@ -15,13 +15,13 @@
       style="position:relative; top:40px; height:100vh; background:rgba(255,255,255,0); width:100vw;"
     >
       <div class="sideimg">
-        <img
+        <!-- <img
           class="image"
           src="..\assets\school-chemistry-lab-equipment-500x500.jpg"
           alt=""
         />
         <img class="image" src="..\assets\Medical_supplies_small.jpg" alt="" />
-        <img class="image" src="..\assets\tech.jpg" alt="" />
+        <img class="image" src="..\assets\tech.jpg" alt="" /> -->
       </div>
 
       <div class="side"></div>
@@ -44,12 +44,12 @@
         <div class="card">
           <div class="cotent">
             <h1>01</h1>
-            <img
+            <!-- <img
               height="120px"
               width="200px"
               src="..\assets\380-3808023_medical-supplies-medical-supplies-transparent.png"
               alt=""
-            />
+            /> -->
             <h3>Medical supplies</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -62,11 +62,11 @@
         <div class="card">
           <div class="cotent">
             <h1>02</h1>
-            <img
+            <!-- <img
               height="120px"
               src="..\assets\158-1584784_how-chemical-cleaning-supplies-can-help-you-boost.png"
               alt=""
-            />
+            /> -->
             <h3>Chemical Reagent</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -79,11 +79,11 @@
         <div class="card">
           <div class="cotent">
             <h1>03</h1>
-            <img
+            <!-- <img
               height="120px"
               src="..\assets\Important-Processes-for-Food-Processing-and-Packaging.jpg"
               alt=""
-            />
+            /> -->
             <h3>Processing factory</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
