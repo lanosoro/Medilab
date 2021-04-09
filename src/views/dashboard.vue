@@ -15,13 +15,13 @@
       style="position:relative; top:40px; height:100vh; background:rgba(255,255,255,0); width:100vw;"
     >
       <div class="sideimg">
-        <!-- <img
+        <img
           class="image"
           src="..\assets\school-chemistry-lab-equipment-500x500.jpg"
           alt=""
-        /> -->
-        <!-- <img class="image" src="..\assets\Medical_supplies_small.jpg" alt="" />
-        <img class="image" src="..\assets\tech.jpg" alt="" /> -->
+        />
+        <img class="image" src="..\assets\Medical_supplies_small.jpg" alt="" />
+        <img class="image" src="..\assets\tech.jpg" alt="" />
       </div>
 
       <div class="side"></div>
@@ -29,7 +29,7 @@
         <h2>Welcome</h2>
         <h3>
           <span class="medilab"> Medilab & Allied Products K Ltd</span
-          ><span style="">
+          ><span style="color:black;">
             is a Kenyan company, which is committed to providing Medical and
             Research Reagents and Consumables, Water treatment chemicals,
             Cooling Tower/Boiler/Chiller chemicals and Condition Monitoring
@@ -39,7 +39,7 @@
         <a class="containera" href="/products">Our Products</a>
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
       <div class="container2">
         <div class="card">
           <div class="cotent">
@@ -362,6 +362,7 @@ li {
 .products::before {
   content: "";
   position: absolute;
+  
   top: 40vh;
   left: 0;
   width: 100%;
@@ -374,21 +375,13 @@ li {
   position: absolute;
   top: 40px;
   left: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 187, 255, 0.597), white);
+  background: linear-gradient(rgba(0, 187, 255, 0.056), white);
   clip-path: circle(20% at 10% 40%);
 }
-.products::after {
-  content: "";
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 187, 255, 0.597), white);
-  clip-path: circle(20% at 10% 40%);
-}
+s
 .container {
   position: relative;
   display: flex;
