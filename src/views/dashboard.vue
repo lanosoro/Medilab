@@ -15,13 +15,13 @@
       style="position:relative; top:40px; height:100vh; background:rgba(255,255,255,0); width:100vw;"
     >
       <div class="sideimg">
-        <!-- <img
+        <img
           class="image"
           src="..\assets\school-chemistry-lab-equipment-500x500.jpg"
           alt=""
         />
         <img class="image" src="..\assets\Medical_supplies_small.jpg" alt="" />
-        <img class="image" src="..\assets\tech.jpg" alt="" /> -->
+        <img class="image" src="..\assets\tech.jpg" alt="" />
       </div>
 
       <div class="side"></div>
