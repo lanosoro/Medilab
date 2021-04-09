@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import main from "../views/main.vue";
+import dashboard from "../views/dashboard.vue";
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: main
+    component: dashboard
   },
   {
     path: "/about",

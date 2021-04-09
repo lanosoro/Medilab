@@ -135,22 +135,20 @@ form {
   width: 50%;
   padding: 100px 100px;
 }
-@media screen and (max-width:500px) {
-    form{
-        width: 400px;
-        position: relative;
-        left: 50px;
-    }
-    
+@media screen and (max-width: 500px) {
+  form {
+    width: 400px;
+    position: relative;
+    left: 50px;
+  }
 }
-@media screen  and (max-width:380px) {
-    form{
-        width:100%;
-        position: inherit;
-        left:0;
-        margin: 8px;
-        padding: 88px;
-    }
-    
+@media screen and (max-width: 380px) {
+  form {
+    width: 100%;
+    position: inherit;
+    left: 0;
+    margin: 8px;
+    padding: 88px;
+  }
 }
 </style>

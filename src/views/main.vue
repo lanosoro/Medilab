@@ -54,12 +54,16 @@
         </div>
       </v-carousel-item>
     </v-carousel>
-     
+    <products/>
+     <dashboard/>
   </section>
 </template>
 
 <script>
+import Products from '../components/products.vue';
+import dashboard from './dashboard.vue';
 export default {
+  components: { dashboard, Products },
 data() {
     return {
       colors: [

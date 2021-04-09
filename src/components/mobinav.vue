@@ -20,13 +20,10 @@
           </li>
           <li class="nav-link" style="--i: .85s">
             <a href="#">Contact Us<i class="fas fa-caret-down"></i></a>
-           
           </li>
           <li class="nav-link" style="--i: 1.1s">
             <a href="products">Products<i class="fas fa-caret-down"></i></a>
-            <div class="dropdown">
-              
-            </div>
+            <div class="dropdown"></div>
           </li>
           <li class="nav-link" style="--i: 1.35s">
             <a href="/about">About</a>
@@ -109,12 +106,12 @@ export default {};
 }
 
 .nav-links > ul {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px 10px;
-    right: -30px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 10px;
+  right: -30px;
 }
 
 .nav-link {
@@ -318,7 +315,7 @@ export default {};
   }
 
   .nav-btn {
-       position: fixed;
+    position: fixed;
     height: 100ch;
     top: 0px;
     left: 140px;
