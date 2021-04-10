@@ -6,13 +6,13 @@
     ma-0
     pa-0
   >
-    <header>
+    <!-- <header style="height:30px;">
       <bavbar />
-    </header>
+    </header> -->
 
     <section
       id="landing"
-      style="position:relative; top:40px; height:100vh; background:rgba(255,255,255,0); width:100vw;"
+      style="position:relative; top:-3px; height:100vh; background:rgba(255,255,255,0); width:100vw;"
     >
       <div class="sideimg">
         <img
@@ -30,13 +30,83 @@
         <h3>
           <span class="medilab"> Medilab & Allied Products K Ltd</span
           ><span style="color:black;">
-            is a Kenyan company, which is committed to providing Medical and
-            Research Reagents and Consumables, Water treatment chemicals,
-            Cooling Tower/Boiler/Chiller chemicals and Condition Monitoring
-            reagents/Sensors.</span
-          >
+            is located in Nairobi, Kenya, a Chemical & Research/Medical
+            Distributor</span
+          ><span style="color:black">
+            We want to be a leading provider of products and services to the
+            Medical, Water Treatment and scientific Sectors.
+          </span>
         </h3>
         <a class="containera" href="products">Our Products</a>
+      </div>
+    </section>
+    <section class="about" style="height:100vh;">
+      <div class="card23">
+        <div class="content">
+          <h1>01</h1>
+
+          <h3>Medical supplies</h3>
+          <p>
+            Medilab & Allied Products K Ltd is a Kenyan company, which is
+            committed to providing Medical and Research Reagents and
+            Consumables, Water treatment chemicals, Cooling Tower/Boiler/Chiller
+            chemicals and Condition Monitoring reagents/Sensors.
+          </p>
+          <a href="#">more</a>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="card2">
+          <div class="content">
+            <h1>02</h1>
+
+            <h3>Chemical Reagent</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              harum temporibus nisi culpa aspernatur reprehenderit a provident
+              modi ab eius.
+            </p>
+            <a href="#">more</a>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="content">
+            <h1>03</h1>
+
+            <h3>Processing factory</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              harum temporibus nisi culpa aspernatur reprehenderit a provident
+              modi ab eius.
+            </p>
+            <a href="#">more</a>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="content">
+            <h1>04</h1>
+            <h3>powerplant</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              harum temporibus nisi culpa aspernatur reprehenderit a provident
+              modi ab eius.
+            </p>
+            <a href="#">more</a>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="content">
+            <h1>05</h1>
+
+            <h3>water treatment reagents</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              harum temporibus nisi culpa aspernatur reprehenderit a provident
+              modi ab eius.
+            </p>
+            <a href="#">more</a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="products" id="products">
@@ -147,29 +217,66 @@
     </section>
   </v-layout>
 </template>
-
 <script>
+import anime from "animejs/lib/anime.es.js";
+
 export default {
   data() {
-    return {
-      colors: [
-        "indigo",
-        "warning",
-        "pink darken-2",
-        "red lighten-1",
-        "deep-purple accent-4"
-      ],
-      slides: ["First", "Second", "Third", "Fourth", "Fifth"]
-    };
+    {
+      var textWrapper = document.querySelector(".medilab .letters");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='medilab'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".medilab",
+          rotateY: [-90, 0],
+          duration: 1300,
+          delay: (el, i) => 45 * i
+        })
+        .add({
+          targets: ".medilab",
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+    }
   }
 };
 </script>
 
 <style scoped>
+/* about section */
+.about {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  padding: 12%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0);
+  z-index: 10000000;
+}
+
+.container3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+/* end */
 #landing {
   font-family: noto sans;
   padding: 14em 14em 14em 20em;
   margin: 0;
+  position: relative;
+  top: -100px;
 }
 .sideimg {
   z-index: -1;
@@ -218,18 +325,21 @@ export default {
 }
 .container {
   display: inline-block;
-  background: rgba(243, 243, 243, 0.145);
-  width: 40vw;
+  background: rgba(243, 243, 243, 0);
+  width: vw;
   padding: 3em;
+  left: 30%;
   border-radius: 3em;
-  top: -60px;
+  top: -145px;
+  margin-left: -16vw;
   position: relative;
   z-index: 1;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border: solid 2px transparent;
   background-clip: padding-box;
-  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
 }
+
 .conatainer h3 {
   margin: 0;
   font-size: 2rem;
@@ -362,7 +472,7 @@ li {
 .products::before {
   content: "";
   position: absolute;
-  
+
   top: 40vh;
   left: 0;
   width: 100%;
@@ -381,8 +491,7 @@ li {
   background: linear-gradient(rgba(0, 187, 255, 0.056), white);
   clip-path: circle(20% at 10% 40%);
 }
-s
-.container {
+s .container {
   position: relative;
   display: flex;
   justify-content: center;

@@ -42,6 +42,7 @@ header {
   position: relative;
   left: 0;
   right: 0;
+  height: 90px;
   color: #28b6e7;
   background: white;
 }

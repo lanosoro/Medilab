@@ -1607,6 +1607,11 @@
   "resolved" "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz"
   "version" "1.0.2"
 
+"animejs@^3.2.1", "animejs@~3":
+  "integrity" "sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A=="
+  "resolved" "https://registry.npmjs.org/animejs/-/animejs-3.2.1.tgz"
+  "version" "3.2.1"
+
 "ansi-colors@^3.0.0":
   "integrity" "sha512-hHUXGagefjN2iRrID63xckIvotOXOojhQKWIPUZ4mNUZ9nLZW+7FMNoE1lOkEhNWYsx/7ysGIuJYCiMAA9FnrA=="
   "resolved" "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz"
@@ -8495,6 +8500,13 @@
   "integrity" "sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ=="
   "resolved" "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz"
   "version" "1.1.2"
+
+"vue-animejs@^2.1.1":
+  "integrity" "sha512-m+PTCXuCprvLVntQmpVo0StewYb0P0SKxaHBCOWm44ShjCN+IZMJrJfhZFSwaIRv34eG1boH3UqzH45speXirA=="
+  "resolved" "https://registry.npmjs.org/vue-animejs/-/vue-animejs-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "animejs" "~3"
 
 "vue-eslint-parser@^7.0.0":
   "integrity" "sha512-QXxqH8ZevBrtiZMZK0LpwaMfevQi9UL7lY6Kcp+ogWHC88AuwUPwwCIzkOUc1LR4XsYAt/F9yHXAB/QoD17QXA=="
