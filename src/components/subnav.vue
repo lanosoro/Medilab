@@ -6,7 +6,7 @@
           ><img
             id="logo2"
             height="100px"
-            src="http://medilab.co.ke/wp-content/uploads/2017/04/logo-medilab.jpg"
+            src="..\assets\logo-medilab-removebg-preview.png"
             alt=""
             srcset=""
         /></a>

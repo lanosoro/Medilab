@@ -41,11 +41,11 @@
       </div>
     </section>
     <section class="about" style="height:100vh;">
-      <div class="card23">
+      <div class="card23" style="margin-bottom:100px: position:relative; bottom:20px;">
         <div class="content">
-          <h1>01</h1>
+          <h1>About Us</h1>
 
-          <h3>Medical supplies</h3>
+          <h3 xtyle="font-weight:900"> <img src="" alt=""></h3>
           <p>
             Medilab & Allied Products K Ltd is a Kenyan company, which is
             committed to providing Medical and Research Reagents and
@@ -55,7 +55,7 @@
           <a href="#">more</a>
         </div>
       </div>
-      <div class="container3">
+      <div class="container3" style="top:100px;">
         <div class="card2">
           <div class="content">
             <h1>02</h1>
@@ -69,11 +69,11 @@
             <a href="#">more</a>
           </div>
         </div>
-        <div class="card2">
+        <div class="card2 " style="">
           <div class="content">
-            <h1>03</h1>
+            
 
-            <h3>Processing factory</h3>
+            <h3 style="  font-weight:900"> <img src="..\assets\F&B.png" alt="" height="50px"> Food & Beverages</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
               harum temporibus nisi culpa aspernatur reprehenderit a provident
@@ -84,8 +84,8 @@
         </div>
         <div class="card2">
           <div class="content">
-            <h1>04</h1>
-            <h3>powerplant</h3>
+            <h1> </h1>
+            <h3 style="display:block; font-weight:900"> <img src="..\assets\personalcareicon.png" alt="" height="50px">personal hyiene </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
               harum temporibus nisi culpa aspernatur reprehenderit a provident
@@ -96,8 +96,6 @@
         </div>
         <div class="card2">
           <div class="content">
-            <h1>05</h1>
-
             <h3>water treatment reagents</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -113,13 +111,14 @@
       <div class="container2">
         <div class="card">
           <div class="cotent">
+            
             <h1>01</h1>
-            <!-- <img
+            <img
               height="120px"
               width="200px"
               src="..\assets\380-3808023_medical-supplies-medical-supplies-transparent.png"
               alt=""
-            /> -->
+            />
             <h3>Medical supplies</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -132,11 +131,11 @@
         <div class="card">
           <div class="cotent">
             <h1>02</h1>
-            <!-- <img
+            <img
               height="120px"
               src="..\assets\158-1584784_how-chemical-cleaning-supplies-can-help-you-boost.png"
               alt=""
-            /> -->
+            />
             <h3>Chemical Reagent</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -183,7 +182,7 @@
                     class="input"
                     placeholder="Username"
                   />
-                  s<label for="">Username</label>
+                  <label for="">Username</label>
                 </div>
                 <div class="input-container">
                   <input
@@ -252,15 +251,15 @@ export default {
 <style scoped>
 /* about section */
 .about {
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  padding: 12%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0);
-  z-index: 10000000;
+     position: relative;
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    z-index: 100;
+    align-items: center;
 }
 
 .container3 {
@@ -270,6 +269,7 @@ export default {
   justify-content: center;
   background: rgb(255, 255, 255);
 }
+
 /* end */
 #landing {
   font-family: noto sans;
@@ -326,12 +326,13 @@ export default {
 .container {
   display: inline-block;
   background: rgba(243, 243, 243, 0);
-  width: vw;
+ 
   padding: 3em;
-  left: 30%;
+ align-content: center;
+ justify-items: center;
   border-radius: 3em;
-  top: -145px;
-  margin-left: -16vw;
+  top: -15px;
+ 
   position: relative;
   z-index: 1;
   -webkit-backdrop-filter: blur(4px);
@@ -373,7 +374,7 @@ li {
 }
 /* section 2 */
 .products {
-  min-height: 130vh;
+  min-height: 100vh;
   margin: 0;
   display: flex;
 
@@ -383,15 +384,15 @@ li {
 }
 
 .container2 {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  max-width: 100vw;
-  flex-wrap: wrap;
-  z-index: 10000;
-
-  align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    z-index: 100;
+    top: 140px;
+    align-items: center;
 }
 .container2 .card {
   position: relative;
@@ -458,11 +459,11 @@ li {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 0;
+  padding-left: 0;
 }
 .products {
-  min-height: 130vh;
+  min-height: 100vh;
   margin: 0;
   display: flex;
   align-items: center;
@@ -472,7 +473,7 @@ li {
 .products::before {
   content: "";
   position: absolute;
-
+  display:none;
   top: 40vh;
   left: 0;
   width: 100%;
@@ -484,6 +485,7 @@ li {
   content: "";
   position: absolute;
   top: 40px;
+  display: none;
   left: 0;
   z-index: 0;
   width: 100%;
@@ -491,7 +493,7 @@ li {
   background: linear-gradient(rgba(0, 187, 255, 0.056), white);
   clip-path: circle(20% at 10% 40%);
 }
-s .container {
+.container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -501,23 +503,24 @@ s .container {
   overflow: hidden;
 }
 .container .card {
-  position: relative;
-  font-family: noto sans;
-  font-size: 14px;
-  width: 880px;
-  top: 10px;
-  height: 565px;
-  padding: 19px;
-  margin: 50px;
-  margin-bottom: 90px;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.426);
-  border-radius: 15px;
-  background: rgba(0, 187, 255, 0.166);
-  border-top: 1px solid rgba(252, 252, 252, 0.4);
-  border-left: 1px solid rgba(252, 252, 252, 0.4);
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(5px);
+      position: relative;
+    font-family: noto sans;
+    font-size: 14px;
+    width: 302px;
+    top: 100px;
+    height: 373px;
+    padding: 11px;
+    margin: 7px;
+    margin-bottom: 90px;
+    box-shadow: 20px 20px 40px rgb(0 0 0 / 43%);
+    border-radius: 15px;
+    background: rgba(0, 187, 255, 0.145);
+    border-top: 1px solid rgba(252, 252, 252, 0.4);
+    border-left: 1px solid rgba(252, 252, 252, 0.4);
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 .container .card .cotent {
   padding: 10px;
@@ -568,7 +571,7 @@ s .container {
 .form {
   width: 100%;
   max-width: 820px;
-  height: 500px;
+  height: 100%;
   background-color: #fff;
   border-radius: 10px;
   z-index: 10000;
@@ -704,26 +707,34 @@ textarea.input {
     width: 100%;
     padding: 30px;
   }
+  #landing{
+      font-family: noto sans;
+    padding: 2em 2em 2em 4em;
+    margin: 0;
+    position: relative;
+    top: -100px;
+}
   .container .card {
     position: relative;
     font-family: noto sans;
     font-size: 14px;
     width: 100%;
-    top: 100px;
-    height: 565px;
-    padding: 19px;
-    margin: 50px;
-    margin-bottom: 90px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.426);
+    top: 10px;
+    height: 100%;
+    padding: 1px;
+    margin: 3px 0;
+    margin-bottom: 9px;
+    box-shadow: 20px 20px 20px rgb(0 0 0 / 43%);
     border-radius: 15px;
     background: rgba(0, 187, 255, 0.166);
     border-top: 1px solid rgba(252, 252, 252, 0.4);
     border-left: 1px solid rgba(252, 252, 252, 0.4);
     justify-content: center;
     align-items: center;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
   }
-}
+
 .container2 .card .cotent a {
   position: relative;
   display: inline-block;
@@ -738,8 +749,16 @@ textarea.input {
 #lastcard {
   margin-bottom: 230px;
 }
+}
 /* end */
 @media screen and (max-width: 991px) {
+  #landing{
+    font-family: noto sans;
+    padding: 7em 7em 7em 10em;
+    margin: 0;
+    position: relative;
+    top: -100px;
+}
   .image {
     height: 100vh;
     width: 503px;
@@ -748,21 +767,41 @@ textarea.input {
     z-index: -1000000;
     margin-left: -5px;
   }
+    .container .card {
+    position: relative;
+    font-family: noto sans;
+    font-size: 14px;
+    width: 100%;
+    top: 10px;
+    height: 100%;
+    padding: 1px;
+    margin: 3px 0;
+    margin-bottom: 9px;
+    box-shadow: 20px 20px 20px rgb(0 0 0 / 43%);
+    border-radius: 15px;
+    background: rgba(0, 187, 255, 0.166);
+    border-top: 1px solid rgba(252, 252, 252, 0.4);
+    border-left: 1px solid rgba(252, 252, 252, 0.4);
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  
   .container {
-    display: inline-block;
+  display: inline-block;
     background: rgba(243, 243, 243, 0.145);
     width: 60vw;
     padding: 1em;
     border-radius: 3em;
-    top: -170px;
-    left: -30vw;
+    top: -0px;
     position: relative;
     z-index: 1;
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     border: solid 2px transparent;
     background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
-  }
+    box-shadow: 10px 10px 10px rgb(255 255 255 / 30%);}
   .conatainer h3 {
     margin: 0;
     font-size: 1.5rem;
@@ -777,6 +816,21 @@ textarea.input {
   }
 }
 @media screen and (max-width: 600px) {
+.about .container3 .content p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5rem;
+
+}
+#landing{
+      font-family: noto sans;
+    padding: 4em 4em 4em 7em;
+    margin: 0;
+    position: relative;
+    top: -100px;
+}
   .image {
     height: 100vh;
     width: 503px;
@@ -788,17 +842,18 @@ textarea.input {
   .container {
     display: inline-block;
     background: rgba(243, 243, 243, 0.145);
-    width: 85vw;
+    width: 80vw;
+    left: -0vw;
     padding: 1em;
     border-radius: 3em;
-    top: -170px;
-    left: -90vw;
+    top: -0px;
     position: relative;
     z-index: 1;
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     border: solid 2px transparent;
     background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 10px rgb(255 255 255 / 30%);
   }
   .conatainer h3 {
     margin: 0;
@@ -812,5 +867,37 @@ textarea.input {
     font-size: 2.6em;
     font-weight: 1000;
   }
+  .container3[data-v-19c9d02c] {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 100%;
+    top: 100px;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.container-form{
+    display: inline-block;
+    background: rgba(243, 243, 243, 0.145);
+    width: 86vw;
+    left: 1vw;
+    padding: 1em;
+    border-radius: 2em;
+    top: 20px;
+    position: relative;
+    z-index: 5;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgb(255 255 255 / 25%);
+}
+
 }
 </style>

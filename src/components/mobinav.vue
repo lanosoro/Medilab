@@ -7,7 +7,7 @@
         ><img
           id="logo2"
           height="55px"
-          src="http://medilab.co.ke/wp-content/uploads/2017/04/logo-medilab.jpg"
+          src="..\assets\logo-medilab-removebg-preview.png"
           alt=""
           srcset=""
       /></a>
@@ -19,7 +19,7 @@
             <a href="/">Home</a>
           </li>
           <li class="nav-link" style="--i: .85s">
-            <a href="#">Contact Us<i class="fas fa-caret-down"></i></a>
+            <a href=".about">Contact Us<i class="fas fa-caret-down"></i></a>
           </li>
           <li class="nav-link" style="--i: 1.1s">
             <a href="products">Products<i class="fas fa-caret-down"></i></a>
@@ -106,12 +106,12 @@ export default {};
 }
 
 .nav-links > ul {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0px 10px;
-  right: -30px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 1px;
+    right: 0px;
 }
 
 .nav-link {
@@ -231,7 +231,7 @@ export default {};
   height: 2.5rem;
   display: flex;
   align-items: center;
-
+  position: fixed;
   justify-content: flex-end;
   margin-top: -90px;
 }
@@ -316,9 +316,9 @@ export default {};
 
   .nav-btn {
     position: fixed;
-    height: 100ch;
+    height: 100vh;
     top: 0px;
-    left: 140px;
+    left: 25%;
     width: 100%;
     background-color: #69bde7;
     flex-direction: column;
